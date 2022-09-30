@@ -1,0 +1,135 @@
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class MyTest {
+    public long computeDurationInMilliseconds(int hours, int minutes, int seconds) {
+        long duration = (((hours * 60) + minutes) * 60 + seconds) * 1000;
+        return duration;
+    }
+
+    public void doSomething() {
+        throw new RuntimeException();
+    }
+}
+
+public class MyClass {
+    public int compute(int a) {
+        return a * 42;
+    }
+}
+
+class StringUtils {
+    public static String concatenate(String s1, String s2) {
+        return s1.concat(s2);
+    }
+}
+
+import java.lang.String;
+import my.company.SomeClass;
+import java.io.File;
+import my.company2.SomeType;
+
+class ExampleClass {
+    public String someString;
+    public SomeType something;
+}
+
+public class Example2Class {
+    public void foo(String bar) throws RuntimeException {
+        throw new RuntimeException("My Message");
+    }
+}
+
+public class Foo {
+    public Collection<User> listUsers() {
+        File userList = new File("/home/mylogin/Dev/users.txt");
+        Collection<User> users = parse(userList);
+        return users;
+    }
+
+    public Collection<User> parse(File uFile){
+        return null;
+    }
+}
+
+public class MyFoo {
+    public static void main(String[] args) {
+        System.out.println("It works");
+    }
+}
+
+public class MyFoorest {
+    private static String ACTION = "action1";
+    private static Logger logger = new Logger();
+    public void run() {
+        prepare(ACTION);
+        execute(ACTION);
+        release(ACTION);
+    }
+
+    public static void prepare(String string) {
+        logger.print(string + " prepared");
+    }
+
+    public static void execute(String string) {
+        logger.print(string + " executed");
+    }
+
+    public static void release(String string) {
+        logger.print(string + " released");
+    }
+}
+
+class Logger {
+    void print(String msg){
+        //implement print function here
+    }
+}
+
+class MikeClass {
+    private static Logger logger = new Logger();
+    void doSomething() {
+        // TODO
+    }
+
+    void doIt() {
+        logger.print("I am doing it");
+    }
+}
+
+public class Address {
+}
+
+public class Person implements Serializable {
+    private static final long serialVersionUID = 1905122041950251207L;
+}
+
+public class Mine {
+    int foo(int a) {
+        return 12;
+    }
+}
+
+enum Status {
+    int OPEN = 1;
+    int CLOSED = 2;
+}
+
+public class Baidu {
+    List<String> strings = new ArrayList<String>();
+    Map<String, List<Integer>> map = new HashMap<String, List<Integer>>();
+}
+
+public class MyBaidu {
+    public static void main(String[] args)
+    Boolean b = getBoolean();
+    if (b) {
+    foo();
+    } else {
+    bar();
+    }
+    }
